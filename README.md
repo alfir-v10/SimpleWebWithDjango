@@ -1,5 +1,5 @@
 # StudentBase
-A simple web application with Django
+A simple web application with Django.
 The project was completed as part of a university project.
 
 ![](https://github.com/alfir-v10/StudentBase/blob/main/screens/MainPage.PNG)
