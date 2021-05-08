@@ -1,0 +1,25 @@
+{% extends 'main/wrapper.html' %}
+{% block content %}
+<table>
+<caption> Оценки </caption>
+    <tr>
+        <th>Студент</th>
+        <th>Математика</th>
+        <th>Физика</th>
+        <th>Английский</th>
+        <th>Геометрия</th>
+        <th>География</th>
+    </tr>
+    {% for i in perf %}
+    <tr>
+        <td>{{ i.perform }}</td>
+        <td>{{ i.mathPerf }}</td>
+        <td>{{ i.physPerf }}</td>
+        <td>{{ i.engPerf }}</td>
+        <td>{{ i.geomPerf }}</td>
+        <td>{{ i.geogPerf }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<p><a href="{% url 'logout' %}">Logout</a></p>
+{% endblock %}
